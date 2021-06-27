@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+:root {
+  --Strong-Cyan: hsl(171, 66%, 44%);
+  --Light-Blue: hsl(233, 100%, 69%);
+  --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+  --Grayish-Blue: hsl(201, 11%, 66%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 18px;
+  font-family: 'Bai Jamjuree', sans-serif;
+  background-image: url('../images/bg-header-mobile.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+}
+
+main {
+  min-height: 100vh;
+  text-align: center;
+}
+ul {
+  list-style-type: none;
+  color: var(--Grayish-Blue);
+}
+h3 {
+  color: var(--Dark-Grayish-Blue);
+  font-size: 1.5rem;
+  opacity: 0.8;
+}
+p {
+  color: var(--Grayish-Blue);
+  font-size: 0.81rem;
+  line-height: 1.4;
+  margin: 10px 0 25px 0;
+  opacity: 0.8;
+}
+.logo {
+  width: 40%;
+  margin-bottom: 20px;
+}
+.btn-ios,
+.btn-mac {
+  width: 100%;
+  border-radius: 30px;
+  padding: 10px;
+  color: white;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+}
+.btn-ios {
+  background: var(--Strong-Cyan);
+}
+.btn-mac {
+  background: var(--Light-Blue);
+}
+.container {
+  width: 50%;
+  margin: 80px auto 0;
+  .top,
+  .feature,
+  .clipboard,
+  .workflow,
+  .sponsores,
+  .last {
+    margin-bottom: 90px;
+  }
+  .computer-img,
+  .devices-img {
+    width: 100%;
+  }
+  .computer-img {
+    margin: 25px 0;
+  }
+  .feature {
+    .search,
+    .sync,
+    .history {
+      margin: 30px 0;
+    }
+  }
+  .workflow {
+    .blacklist,
+    .snippets,
+    .preview {
+      img {
+        margin: 30px 0;
+      }
+    }
+  }
+  .sponsores {
+    .google,
+    .ibm,
+    .microsoft,
+    .hp,
+    .vector {
+      width: 50%;
+      margin: 30px;
+    }
+  }
+}
+footer {
+  background: rgba(76, 84, 93, 0.05);
+  width: 100%;
+  padding: 30px;
+  position: relative;
+  z-index: -1;
+  .logo {
+    width: 15%;
+  }
+  ul li {
+    margin: 17px 0;
+    font-size: 0.9rem;
+  }
+  a {
+    img {
+      width: 5%;
+      margin: 5px 15px 0;
+    }
+  }
+}
+
+@media screen and(min-width:720px) {
+  h3,
+  p {
+    opacity: 1;
+  }
+  .flex {
+    display: flex;
+    justify-content: center;
+    .btn-ios,
+    .btn-mac {
+      width: 30%;
+      margin: 0 10px;
+    }
+  }
+  .container {
+    width: 90%;
+    .top {
+      .logo {
+        width: 10%;
+      }
+    }
+    .feature {
+      margin-bottom: 300px;
+      img {
+        width: 75%;
+        float: left;
+        position: relative;
+        left: -80px;
+      }
+      .feature-info {
+        text-align: left;
+        position: relative;
+        top: 50px;
+        left: -20px;
+        h3 {
+          font-size: 1rem;
+        }
+        p {
+          font-size: 0.6rem;
+        }
+      }
+    }
+    .clipboard {
+      header {
+        width: 70%;
+        margin: auto;
+      }
+      img {
+        width: 80%;
+        margin: 50px 0 0px 0;
+      }
+    }
+    .workflow {
+      .flex {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+    .sponsores {
+      .google,
+      .ibm,
+      .hp,
+      .vector,
+      .microsoft {
+        width: 12%;
+        height: 10%;
+        margin: 0 30px;
+      }
+    }
+    .last {
+      header {
+        width: 70%;
+        margin: auto;
+      }
+    }
+  }
+  footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    .logo {
+      width: 30px;
+      height: 30px;
+      position: relative;
+      top: 30px;
+      left: 30px;
+    }
+    .grid {
+      display: grid;
+      grid-template-areas: 'faqs privacy install' 'contact kit .';
+      grid-gap: 0 30px;
+      text-align: left;
+      .Faqs {
+        grid-area: faqs;
+      }
+      .contact {
+        grid-area: contact;
+      }
+      .privacy {
+        grid-area: privacy;
+      }
+      .kit {
+        grid-area: kit;
+      }
+      .install {
+        grid-area: install;
+      }
+    }
+    a {
+      img {
+        width: 20%;
+        margin: 0 5px;
+      }
+    }
+    .social-icon {
+      position: relative;
+      top: 50px;
+      right: 30px;
+    }
+  }
+}
+
+@media screen and(min-width:887px) {
+  .container {
+    .clipboard {
+      header {
+        width: 50%;
+        margin: 400px auto 0;
+      }
+    }
+  }
+}
+
+@media screen and(min-width:975px) {
+  .container {
+    width: 70%;
+    .feature {
+      img {
+        width: 60%;
+      }
+      .feature-info {
+        position: relative;
+        top: 100px;
+        h3 {
+          font-size: 1.3rem;
+        }
+        p {
+          font-size: 1rem;
+        }
+      }
+    }
+    .clipboard {
+      img {
+        width: 50%;
+      }
+    }
+  }
+}
