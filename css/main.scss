@@ -59,26 +59,24 @@ p {
   border-radius: 30px;
   padding: 10px;
   color: white;
-  margin: 8px 0;
+  margin: 10px 0;
   border: none;
   cursor: pointer;
 }
 .btn-ios {
   background: var(--Strong-Cyan);
-  transition: all 0.5s ease-in;
+  transition: all 0.3s ease-in;
   &:hover {
-    border: 1px solid #000;
-    color: var(--Strong-Cyan);
-    background: #fff;
+    color: #fff;
+    background: var(--Dark-Grayish-Blue);
   }
 }
 .btn-mac {
   background: var(--Light-Blue);
   transition: all 0.3s ease-in;
   &:hover {
-    border: 0.5px solid #000;
-    color: var(--Light-Blue);
-    background: #fff;
+    color: #fff;
+    background: var(--Dark-Grayish-Blue);
   }
 }
 .container {
