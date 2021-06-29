@@ -47,7 +47,7 @@ p {
 }
 
 .logo {
-  width: 40%;
+  width: 5rem;
   margin-bottom: 20px;
 }
 
@@ -71,8 +71,9 @@ p {
 }
 
 .container {
-  width: 50%;
+  width: 100%;
   margin: 80px auto 0;
+  padding: 0 50px;
 }
 
 .container .top,
@@ -151,35 +152,43 @@ footer a img {
   }
   .flex .btn-ios,
   .flex .btn-mac {
-    width: 30%;
+    padding: 15px;
     margin: 0 10px;
   }
   .container {
-    width: 90%;
+    width: 100%;
   }
   .container .top .logo {
     width: 10%;
   }
   .container .feature {
-    margin-bottom: 300px;
+    margin-bottom: 60px;
+    width: 100%;
   }
-  .container .feature img {
-    width: 75%;
-    float: left;
+  .container .feature .feature__flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .container .feature .feature__flex img {
+    width: 500px;
+    margin: 30px 0 0 0;
     position: relative;
-    left: -80px;
+    left: -70px;
   }
   .container .feature .feature-info {
     text-align: left;
     position: relative;
-    top: 50px;
-    left: -20px;
+    top: 30px;
   }
   .container .feature .feature-info h3 {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   .container .feature .feature-info p {
-    font-size: 0.6rem;
+    font-size: 0.8rem;
   }
   .container .clipboard header {
     width: 70%;
@@ -270,22 +279,21 @@ footer a img {
 }
 
 @media screen and (min-width: 887px) {
-  .container .clipboard header {
-    width: 50%;
-    margin: 400px auto 0;
+  .container {
+    width: 100%;
   }
 }
 
 @media screen and (min-width: 975px) {
   .container {
-    width: 70%;
+    width: 100%;
   }
   .container .feature img {
-    width: 60%;
+    width: auto;
   }
   .container .feature .feature-info {
     position: relative;
-    top: 100px;
+    top: 30px;
   }
   .container .feature .feature-info h3 {
     font-size: 1.3rem;
@@ -295,6 +303,20 @@ footer a img {
   }
   .container .clipboard img {
     width: 50%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container .btn-ios,
+  .container .btn-mac {
+    width: 20rem;
+  }
+  .container .feature header {
+    width: 50rem;
+    margin: auto;
+  }
+  .container .feature .feature__flex .computer-img {
+    width: auto;
   }
 }
 /*# sourceMappingURL=main.css.map */
