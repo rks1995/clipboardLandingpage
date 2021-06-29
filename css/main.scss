@@ -29,6 +29,13 @@ main {
 ul {
   list-style-type: none;
   color: var(--Grayish-Blue);
+  li {
+    cursor: pointer;
+    a {
+      text-decoration: none;
+      color: var(--Grayish-Blue);
+    }
+  }
 }
 h3 {
   color: var(--Dark-Grayish-Blue);
@@ -58,9 +65,21 @@ p {
 }
 .btn-ios {
   background: var(--Strong-Cyan);
+  transition: all 0.5s ease-in;
+  &:hover {
+    border: 1px solid #000;
+    color: var(--Strong-Cyan);
+    background: #fff;
+  }
 }
 .btn-mac {
   background: var(--Light-Blue);
+  transition: all 0.3s ease-in;
+  &:hover {
+    border: 0.5px solid #000;
+    color: var(--Light-Blue);
+    background: #fff;
+  }
 }
 .container {
   width: 100%;
@@ -113,14 +132,16 @@ footer {
   width: 100%;
   padding: 30px;
   position: relative;
-  z-index: -1;
   ul li {
     margin: 17px 0;
     font-size: 0.9rem;
+    a:hover {
+      color: var(--Dark-Grayish-Blue);
+    }
   }
   a {
     img {
-      width: 1.3rem;
+      width: 1.1rem;
       margin: 5px 15px 0;
     }
   }

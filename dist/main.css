@@ -32,6 +32,15 @@ ul {
   color: var(--Grayish-Blue);
 }
 
+ul li {
+  cursor: pointer;
+}
+
+ul li a {
+  text-decoration: none;
+  color: var(--Grayish-Blue);
+}
+
 h3 {
   color: var(--Dark-Grayish-Blue);
   font-size: 1.5rem;
@@ -64,10 +73,26 @@ p {
 
 .btn-ios {
   background: var(--Strong-Cyan);
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}
+
+.btn-ios:hover {
+  border: 1px solid #000;
+  color: var(--Strong-Cyan);
+  background: #fff;
 }
 
 .btn-mac {
   background: var(--Light-Blue);
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.btn-mac:hover {
+  border: 0.5px solid #000;
+  color: var(--Light-Blue);
+  background: #fff;
 }
 
 .container {
@@ -120,7 +145,6 @@ footer {
   width: 100%;
   padding: 30px;
   position: relative;
-  z-index: -1;
 }
 
 footer ul li {
@@ -128,8 +152,12 @@ footer ul li {
   font-size: 0.9rem;
 }
 
+footer ul li a:hover {
+  color: var(--Dark-Grayish-Blue);
+}
+
 footer a img {
-  width: 1.3rem;
+  width: 1.1rem;
   margin: 5px 15px 0;
 }
 
